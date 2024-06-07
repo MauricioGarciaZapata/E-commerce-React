@@ -1,4 +1,3 @@
-import { useState } from "react";
 // importancion de iconos
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -160,9 +159,57 @@ function App() {
             <img src="/Images/product9.png" alt="" />
             <button>Drive</button>
           </div>
-          <button className="seeMore">
-            See More
-          </button>
+          <button className="seeMore">See More</button>
+        </div>
+      </section>
+
+      <section className="discount">
+        <div className="descountContainer">
+          <div className="discountInfoLeft">
+            <h3>Every Computer and laptop</h3>
+            <h1>Up to 40% off !</h1>
+            <button>Shop Now</button>
+          </div>
+
+          <div className="discountInfoRight">
+            <img src="/Images/pc.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section className="customerReview">
+        <div className="custumerContainer">
+          <div className="title-customer">
+            <h3 style={{ fontSize: 33, textAlign:'center'}}>CUSTOMER REVIEW</h3>
+          </div>
+          <div className="custumerInfo">
+            <img src="/Images/cos.png" alt="" />
+            <strong>Sandy Miller</strong>
+            <p>
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="formu-contact">
+        <div className="title" style={{color:'#fff'}}>
+          <h3 className="h3-formu" >CONTACT NOW</h3>
+        </div>
+        <div className="formulario">
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Message" />
+            <button>SEND</button>
+          </form>
         </div>
       </section>
     </>

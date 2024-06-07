@@ -56,6 +56,7 @@ ul {
   background-image: url('./Images/banner.jpg');
   height: 760px;
   width: 100%;
+  overflow: hidden;
 }
 
 .navPrincipal {
@@ -200,7 +201,7 @@ ul {
 /* nuestros productos  */
 .oursProducts {
   background-color: #ECF0F1;
-  height: 1200px;
+  height: 1300px;
   padding: 30px 0;
 }
 
@@ -228,7 +229,7 @@ ul {
   margin: 0 auto;
   width: 82%;
   background-color: #fff;
-  padding: 20px;
+  padding: 50px;
   gap: 20px;
 }
 
@@ -262,7 +263,8 @@ ul {
 .cardProduct button:hover {
   background-color: var(--teal);
 }
-.seeMore{
+
+.seeMore {
   width: 200px;
   padding: 20px;
   cursor: pointer;
@@ -276,9 +278,198 @@ ul {
   border: solid 1px var(--teal);
   grid-column: 2;
   grid-row: 4;
+  margin-left: 60px;
+}
+
+.seeMore:hover {
+  background-color: var(--teal);
+  color: black
+}
+
+/* estilos del discoutn banner */
+.discount {
+  height: 520px;
+  background-color: #4f4aa6;
+  display: flex;
+}
+
+.descountContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 80%;
+  gap: 80px;
+}
+
+.discountInfoLeft {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.discountInfoLeft h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.discountInfoLeft h1 {
+  font-weight: 400;
+  font-size: 66px;
+  letter-spacing: 0.3;
+}
+
+
+.discountInfoLeft button {
+  width: 200px;
+  height: 56px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--teal);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  transition: ease 1s all;
+  margin-top: 35px;
+}
+
+.discountInfoLeft button:hover {
+  background-color: black;
+}
+
+/* estilos del customer */
+.customerReview {
+  height: 400px;
+
+}
+
+.custumerContainer {
+  position: relative;
+}
+
+.title-customer {
+  color: black;
+  margin-top: 100px;
+
+}
+
+.title-customer h3 {
+
+  font-size: 40px;
+  color: #090807;
+  line-height: 55px;
+  font-weight: bold;
+  padding: 0;
+  text-transform: uppercase;
+  border-bottom: #48ca95 solid 1px;
+  max-width: 315px;
   margin: auto;
 }
-.seeMore:hover{
+
+.custumerInfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 300px;
+  gap: 28px;
+  top: 110px;
+}
+
+.custumerInfo img {
+  width: 40px;
+}
+
+.custumerInfo strong {
+  font-size: 34px;
+  color: #0b0b0c;
+}
+
+.custumerInfo p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #0b0b0c;
+  text-align: left;
+  width: 650px;
+  height: 240px;
+
+}
+
+/*   formulario */
+.formu-contact {
+  height: 1000px;
+  background-image: url('/public/Images/contact_g.jpg');
+  object-fit: cover;
+  padding-top: 15px;
+  margin-top: 125px;
+}
+
+.formulario {
+  width: 820px;
+  height: 680px;
+  border: 2px solid #fff;
+  margin: auto;
+  display: flex;
+}
+
+.formulario form {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.formulario form input {
+  background-color: transparent;
+  width: 650px;
+  height: 56px;
+  margin: 10px 0;
+  border: 2px solid #fff;
+  font-size: 22px;
+  color: #fff;
+  outline: none;
+  padding: 10px;
+}
+
+.formulario form input::placeholder {
+  color: #fff;
+  text-align: start;
+  position: absolute;
+  /* Para poder usar los pseudoelementos */
+  left: 16px;
+}
+
+.formulario form input:nth-child(4) {
+  height: 150px;
+  cursor: none;
+}
+
+.formulario form button {
+  width: 227px;
+  height: 70px;
+  cursor: pointer;
+  color: #fff;
   background-color: var(--teal);
-  color:black
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  transition: ease 1s all;
+  margin-top: 35px;
+  border-radius: 30px;
+  margin-left: 220px;
+
+}
+
+.formulario form button:hover {
+  background-color: black;
+}
+
+.h3-formu {
+  color: #fff !important;
+  border-bottom: #fff solid 1px;
+  border-bottom: #fff solid 1px !important;
 }
